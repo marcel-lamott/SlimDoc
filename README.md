@@ -7,7 +7,7 @@ The repository supports the following models out of the box:
 - LayoutLMv3 base with 12 layers ([microsoft/layoutlmv3-base](https://huggingface.co/microsoft/layoutlmv3-base))
 
 ## Data
-Our data is hosted on Google Drive [here](TODO insert URL).
+Our data is hosted on Google Drive [here](https://drive.google.com/file/d/1FCYc-Ur55d6HysoIYG3FnWcZPZbky9aL/view?usp=sharing).
 
 It includes: 
 - the base datasets 
