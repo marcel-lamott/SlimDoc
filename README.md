@@ -46,6 +46,7 @@ To evaluate a single model invoke ```eval/eval.py [RUN_NAME]```.
 
 For evaluation of models trained on DocVQA/InfographicsVQA/WikiTableQuestions you also need to install https://github.com/due-benchmark/evaluator.
 
+<!---
 ## Citation
 If you use this code or find it helpful for your research, please consider citing our paper. This helps us continue supporting and maintaining the project.
 ```
@@ -57,3 +58,4 @@ If you use this code or find it helpful for your research, please consider citin
   url       = {https://arxiv.org/abs/your_arxiv_id}  % or DOI if published
 }
 ```
+-->
