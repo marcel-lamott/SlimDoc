@@ -1,6 +1,3 @@
-# Mine
-!/data/table_template.txt
-/data/
 *.egg-info
 /wandb
 **/wandb/
