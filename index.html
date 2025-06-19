@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>SlimDoc</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">SlimDoc: Lightweight Distillation of Document
+                            Transformer Models
+                        </h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                                <a href="https://orcid.org/0009-0009-4345-6888" target="_blank">Marcel
+                                    Lamott</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://github.com/geetu040" target="_blank">Muhammad Armaghan
+                                    Shakir</a><sup>2</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=RI_KtvYAAAAJ" target="_blank">Adrian
+                                    Ulges</a><sup>1</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://www.linkedin.com/in/yves-noel-weweler-1991a7156/"
+                                    target="_blank">Yves-Noel
+                                    Weweler</a><sup>3</sup>,
+                            </span>
+                            <span class="author-block">
+                                <a href="https://scholar.google.com/citations?user=o9RCNZYAAAAJ" target="_blank">Faisal
+                                    Shafait</a><sup>2</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>RheinMain University of Applied Sciences, Wiesbaden,
+                                Germany.</span>
+                            <br>
+                            <span class="author-block"><sup>2</sup>National University of Sciences and Technology,
+                                Islamabad,
+                                Pakistan.</span>
+                            <br>
+                            <span class="author-block"><sup>3</sup>Insiders Technologies GmbH, Kaiserslautern,
+                                Germany.</span>
+                            <br>
+                            <span class="author-block"><a href="https://www.icdar2025.com/"
+                                    target="_blank">International Journal on
+                                    Document Analysis and Recognition (IJDAR) 2025</a></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <!-- TODO -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                                    <a href="https://github.com/marcel-lamott/SlimDoc" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <!-- TODO -->
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <p>
+                    <img src="static/images/overview.jpg" class="blend-img-background center-image"
+                        style="max-width: 100%; height: auto;" />
+                </p>
+                <br>
+                <p>
+                    We study a transititive distillation procedure to distill small-scale document transformers for
+                    specific document types and tasks. Our key focus is SlimDoc (right, blue), a feature-based
+                    distillation procedure for document transformers that focuses on distilling hidden states,
+                    attentions and output logits at different stages of training. To apply SlimDoc in unsupervised
+                    settings, we preceed it with a label distillation from labels generated with an LLM (red, left)
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Deploying state-of-the-art document understanding models remains resource-intensive and
+                            impractical in
+                            many real-world scenarios, particularly where labeled data is scarce and computational
+                            budgets
+                            are constrained. To address these challenges, this work proposes a novel approach towards
+                            parameter-efficient document understanding models capable of adapting to specific tasks and
+                            document types
+                            without the need for labeled data. Specifically, we propose an approach coined SlimDoc to
+                            distill
+                            multimodal document transformer encoder models into smaller student models, using internal
+                            signals at
+                            different training stages, followed by external signals. Our approach is inspired by
+                            TinyBERT and adapted
+                            to the domain of document understanding transformers. We demonstrate SlimDoc to out-
+                            perform both a single-stage distillation and a direct fine-tuning of the student.
+                            Experimental results
+                            across six document understanding datasets demonstrate our approach’s effectiveness: Our
+                            distilled
+                            student models achieve on average 93.0% of the teacher’s performance, while the fine-tuned
+                            students
+                            achieve 87.0% of the teacher’s performance. Without requiring any labeled data, we create
+                            a compact student which achieves 96.0% of the performance of its supervised-distilled
+                            counterpart and
+                            86.2% of the performance of a supervised-fine-tuned teacher model. We demonstrate our
+                            distil-
+                            lation approach to pick up on document geometry and to be effective on the two popular
+                            document
+                            understanding models LiLT and LayoutLMv3. Our implementation and training data is available
+                            at
+                            <a href="https://github.com/marcel-lamott/SlimDoc."
+                                target="_blank">https://github.com/marcel-lamott/SlimDoc</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+    <!-- --------------------- -->
+
+    <section class="section hero is-small">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">SlimDoc: Our Distillation Approach</h2>
+                        <p>
+                            <img class="blend-img-background center-image inside-img"
+                                src="static/images/methodology.jpg" style="max-width: 60%;" />
+                        </p>
+                        <p>
+                            Overview of our distillation approach <em>SlimDoc</em>: Distillation of the student model
+                            with <em>M</em> transformer layers from a teacher model with <em>N</em> layers is split into
+                            two phases: in the first phase, embeddings, attention scores and hidden states of the text
+                            flow from the student model are aligned with the teacher model using MSE loss. In the second
+                            phase, the student model's logits are aligned with the teacher model's using KL divergence
+                            loss.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+
+                        <p>We fine-tune the teacher using Cross-Entropy (CE) loss for three tasks: extractive VQA, SER,
+                            and KIE. For VQA, the model predicts start and end positions in a sequence
+                            <code>x = x₁,…,xₙ</code>. It outputs probabilities <code>pˢ(x)</code> and
+                            <code>pᵉ(x)</code>, where <code>pˢ(x)ᵢ</code> and <code>pᵉ(x)ᵢ</code> are the probabilities
+                            of token <code>i</code> being the start or end. The loss is:
+                            <code>ℒ<sub>CE,QA</sub> = - [log(pˢ(x)<sub>yₛ</sub>) + log(pᵉ(x)<sub>yₑ</sub>)]</code>.
+                        </p>
+
+                        <p>For SER and KIE, each token is classified into one of <code>C</code> classes. The model
+                            outputs <code>p(x)ᵢʲ</code>, the probability of token <code>i</code> being class
+                            <code>j</code>. The CE loss is:
+                            <code>ℒ<sub>CE,SER+KIE</sub> = - (1/n) ∑₁ⁿ log(p(x)ᵢ<sup>yᵢ</sup>)</code>.
+                        </p>
+
+                        <p>To distill a student from the teacher, we use our method <i>SlimDoc</i>, split into two
+                            phases. In phase one, we align internal signals using MSE loss. For hidden states:
+                            <code>ℒ<sub>hidden</sub> = (1/M) ∑₁^M MSE(H<sub>𝒮</sub>ⁱ(x), H<sub>𝒯</sub><sup>lᵢ</sup>(x))</code>,
+                            with
+                            <code>MSE = (1/dn) ∑ⱼ=1ⁿ ∑ₖ=1ᵈ (H<sub>𝒮,jk</sub>ⁱ - H<sub>𝒯,jk</sub><sup>lᵢ</sup>)²</code>.
+                            The embedding loss is
+                            <code>ℒ<sub>emb</sub> = MSE(H<sub>𝒮</sub>⁰(x), H<sub>𝒯</sub>⁰(x))</code>.
+                        </p>
+
+                        <p>For attention (shape <code>H × n × n</code>):
+                            <code>ℒ<sub>attn</sub> = (1/M) ∑₁^M MSE(A<sub>𝒮</sub>ⁱ(x), A<sub>𝒯</sub><sup>lᵢ</sup>(x))</code>,
+                            with
+                            <code>MSE = (1/Hn²) ∑ₕ=1ᴴ ∑ⱼ=1ⁿ ∑ₖ=1ⁿ (A<sub>𝒮,hjk</sub>ⁱ - A<sub>𝒯,hjk</sub><sup>lᵢ</sup>)²</code>.
+                        </p>
+
+                        <p>Combined distillation loss is
+                            <code>ℒ<sub>distill</sub> = α · ℒ<sub>emb</sub> + β · ℒ<sub>hidden</sub> + γ · ℒ<sub>attn</sub></code>.
+                        </p>
+
+                        <p>In phase two, we align the model outputs using KL divergence:
+                            <code>ℒ<sub>KL</sub> = (1/nC) ∑ⱼ=1ⁿ ∑ₖ=1ᶜ p<sub>𝒮</sub>(x)<sub>jk</sub> · log(p<sub>𝒮</sub>(x)<sub>jk</sub> / p<sub>𝒯</sub>(x)<sub>jk</sub>)</code>.
+                            For VQA, this is applied separately to start and end outputs.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="section hero is-small">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Results</h2>
+                        <p>
+                            <img class="blend-img-background center-image inside-img" src="static/images/results.png" />
+                        </p>
+                        <p>General and vocabulary-specific results. The upper half compares our distilled students (DT)
+                            to the teacher models and fine-tuned students (FT), where <strong>best student results are
+                                shown in bold.</strong> It shows that the distillation procedure provides an advantage
+                            compared to regular fine-tuning: the distilled 4-layer student models achieve on average
+                            93.4% and 92.5% of the performance of the 12-layer teachers for LiLT and LayoutLMv3,
+                            respectively, while the fine-tuned students only achieve 87.3% and 86.6%. Further, the data
+                            indicates that an explicit distillation of layout signals is not necessary for LiLT, as the
+                            LiLT-Layout adaptation is on par with the distillation of LiLT's text-flow, which captures
+                            layout signals via the BiACM mechanism. Furthermore, it can be observed that omission of
+                            layout signals during training leads to a sharp drop in performance (LiLT-NoLayout,
+                            LayoutLMv3-NoVisionNoLayout) and that our approach implicitly distills layout signals.</p>
+
+                        <p>The lower half evaluates different vocabulary sizes for the student models: the
+                            <strong>full</strong> vocabulary with 50k tokens is compared against the
+                            <strong>small</strong> variant with 15k tokens and the <strong><em>tiny</em></strong>
+                            variant with 5k tokens. <strong>Best student results for <span
+                                    style="text-transform:uppercase;">small</span> vocab are shown in bold</strong> and
+                            <strong><em>best student results for <span style="text-transform:uppercase;">tiny</span>
+                                    vocab are shown in bold and italics</em></strong>. Column <em>Comp.</em> shows
+                            relative performance compared to full-size vocabulary students in percent. The results
+                            suggest that reducing vocabulary size is an efficient approach to decreasing model size,
+                            having only a moderate impact on performance: on average, the distilled student with the
+                            <strong>small</strong> vocabulary variant achieves 97.7% and 98.0% of the performance of
+                            distilled student with the <strong>full</strong> vocabulary for LiLT and LayoutLMv3,
+                            respectively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Single-Phase VS Two-Phase Distillation</h2>
+                        <p>
+                            <img class="blend-img-background center-image inside-img"
+                                src="static/images/ablation_1.png" />
+                        </p>
+                        <p>
+                            Results of our ablation studies, where we use a single-phase distillation (DT-1Phase)
+                            compared to our usual two-phase setup (DT) and fine-tune a student model initialized with
+                            the weights of the pre-trained base model (FT-NewInit) instead of the fine-tuned teacher
+                            (FT). <strong>Best student results are shown in bold.</strong> The results suggest that the
+                            two-phase distillation setup provides an advantage compared to distillation of hidden
+                            states, attention scores and logits together, leading to improvements of up to 2.5 pp.
+                            Further, the data demonstrates that the initialization of the student model's weights plays
+                            a crucial role in the learning process, with the teacher-initialized student model achieving
+                            better scores on all datasets.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="section hero is-small">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Supervised VS Unsupervised Distillation</h2>
+                        <p>
+                            <img class="blend-img-background center-image inside-img"
+                                src="static/images/ablation_2.png" />
+                        </p>
+
+                        Comparison of supervised and unsupervised distillation: <em>FT</em> and <em>DT</em> denote
+                        fine-tuned and distilled student models, respectively. Models marked with
+                        <sup>&#10022;</sup> were trained using LLM-supplied silver-standard labels in place of
+                        gold-standard GT annotations. Column <em>C-ST</em> shows average performance relative to the
+                        supervised-trained teacher. Column <em>C-CS</em> shows average performance relative to the
+                        corresponding supervised-trained model, i.e., teacher, fine-tuned student or distilled
+                        student. Row <em>ChatGPT 3.5</em> denotes performance of LLM-supplied answers on the
+                        test-split. <strong>Best student results are shown in bold.</strong> The results show that
+                        unsupervised training achieves performance comparable to supervised training, with the
+                        unsupervised-distilled LiLT student reaching 96.0% of its supervised counterpart’s
+                        performance.
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Impact of Student Layer Selection</h2>
+                        <img class="blend-img-background center-image inside-img"
+                            src="static/images/layers_chart.jpg" />
+                        <p>
+                            Relative improvement of distillation over fine-tuning by layers for LiLT (left bars) and
+                            LayoutLMv3 (right bars). X-labels denote the set of layers
+                            <span style="font-family: monospace;">𝓘ₛ</span>. Averages are calculated over all datasets
+                            for the 4, 3, 2 and 1-layer students.
+                            The results indicate that the middle layers of these models benefit more from distillation
+                            compared to the outer layers.
+                            For LiLT, distillation with the set of layers <span style="font-family: monospace;">𝓘ₛ =
+                                ⟨3,7,11⟩</span> gives the greatest improvement,
+                            while for LayoutLMv3 this is the case for <span style="font-family: monospace;">𝓘ₛ =
+                                ⟨2,5,8,11⟩</span>.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section hero is-small">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Model Size and Inference Efficiency</h2>
+                        <p>
+                            <img class="blend-img-background center-image inside-img"
+                                src="static/images/conclusion.png" />
+                        </p>
+                        <p>
+                            Overview of model size and inference times for teacher and student models. Inference time is
+                            measured on 100 batches of DocVQA for batch size 16 (column <em>Inf. (ms)</em>). Column
+                            <em>D.s.</em> indicates the downscaling factor by comparing the size of the teacher to the
+                            student. SV and TV denote the <strong>small</strong> and <strong>tiny</strong> vocabulary
+                            variants, respectively. Column <em>Best Avg Score</em> shows the best average score across
+                            all datasets achieved by an n-layer student. <strong>Best student metrics are shown in
+                                bold.</strong> It is shown that even the largest student models with 4 layers reach
+                            considerable improvements in model size and inference time, while maintaining a performance
+                            close to that of the teacher. While both downscaling strategies—vocabulary reduction and
+                            layer reduction—produce smaller models, reducing the number of layers below 4 leads to a
+                            more significant performance drop, whereas vocabulary reduction more effectively preserves
+                            accuracy at comparable model sizes.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section class="section hero is-small is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-full">
+                    <div class="content">
+                        <h2 class="title is-3">Conclusion</h2>
+                        <p>
+                            In this work we present SlimDoc, a novel and effective distillation framework for
+                            compressing
+                            multimodal document transformer models into lightweight, task-specific students without
+                            requiring labeled data. By combining feature-based and output-based distillation across two
+                            stages, SlimDoc achieves strong performance retention while significantly reducing model
+                            size and computational costs. Evaluations across six datasets and multiple transformer
+                            backbones confirm that our approach consistently outperforms traditional fine-tuning,
+                            maintains spatial layout awareness, and operates effectively even with LLM-generated
+                            silver-standard labels. Additionally, we demonstrate that vocabulary pruning and strategic
+                            layer selection further enhance efficiency with minimal performance trade-off. SlimDoc paves
+                            the way for scalable and label-efficient deployment of document understanding models in
+                            real-world, resource-constrained environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- --------------------- -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <!-- TODO -->
+            <pre><code>BibTex Code Here</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a
+                                href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                            You are free to borrow the source code of this website, we just ask that you link back to
+                            this page in the
+                            footer. <br> This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
